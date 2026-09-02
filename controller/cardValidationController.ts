@@ -34,7 +34,7 @@ export function validateCard(
     const isCardNumberValid = validateCardNumber(cardNumber);
 
     const response: CardValidationResponse = {
-        isNumberValid: true,
+        isNumberValid: isCardNumberValid,
         message: isCardNumberValid
             ? "Card number is valid"
             : "Card number is not valid"
