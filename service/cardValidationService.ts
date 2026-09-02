@@ -5,17 +5,17 @@ export function validateCardNumber(cardNumber: string): boolean {
     // check that the card number contains only digits 
     const isAllDigits = /^\d+$/.test(digits);
     
-    // return false if card number contains contain non-digit characters
+    // return false if the card number contains contain non-digit characters
     if (!isAllDigits) {
         return false
     }
 
-    // return false if card numbers is not up to 16
+    // return false if the card number does not contain exactly 16 digits
     if (digits.length !== 16) {
         return false
     }
 
-    // validate the card number using luhn algorithm
+    // validate the card number using the Luhn algorithm
     let sum = 0;
     let shouldDoubleDigit = false;
 
@@ -37,10 +37,10 @@ export function validateCardNumber(cardNumber: string): boolean {
         // add the numberDigit to sum
         sum += numberDigit;
 
-        // alternate whether next digit should be doubled
+        // alternate whether the next digit should be doubled
         shouldDoubleDigit = !shouldDoubleDigit
     }
 
-    // checks if sum is divisible by 10
+    // checks if the sum is divisible by 10
     return sum % 10 === 0;
 }
