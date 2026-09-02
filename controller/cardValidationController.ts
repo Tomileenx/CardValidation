@@ -9,7 +9,7 @@ export function validateCard(
 ): void {
     const { cardNumber } = req.body;
 
-    // Check if card number are inputed
+    // Check if the card number is provided
     if (!cardNumber) {
         const response: CardValidationResponse = {
             isNumberValid: false,
@@ -20,7 +20,7 @@ export function validateCard(
         return;
     }
 
-    // check if card number input is a string
+    // check if the card number input is a string
     if (typeof cardNumber !== "string") {
         const response: CardValidationResponse = {
             isNumberValid: false,
