@@ -12,29 +12,31 @@ The Luhn algorithm validates a number by working from right to left, doubling ev
 
 ## Project Structure
 
+```text
 CardValidation/
 ├── controller/
-|   └── cardValidationController.ts
-|
+│   └── cardValidationController.ts
+│
 ├── interfaces/
-|    ├── CardValidationRequest.ts
-|    └── CardValidationResponse.ts
-|
+│   ├── CardValidationRequest.ts
+│   └── CardValidationResponse.ts
+│
 ├── route/
-|    └── cardValidationRoutes.ts
-|
+│   └── cardValidationRoutes.ts
+│
 ├── service/
-|    └── cardValidationService.ts
-|
+│   └── cardValidationService.ts
+│
 ├── test/
 │   ├── cardValidationService.test.ts
 │   └── cardValidationController.test.ts
-|
+│
 ├── index.ts
 ├── package-lock.json
 ├── package.json
 ├── README.md
 └── tsconfig.json
+```
 
 ## Project Installation
 
