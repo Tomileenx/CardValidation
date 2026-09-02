@@ -50,41 +50,51 @@ CardValidation/
 - POST
 - URL: http://localhost:3000/api/validateCardNumber
 - Request Body:
+    ```json
     {
         "cardNumber": "4532 0151 1283 0366"
     }
+    ```
 
 - Valid Card Response:
+    ```json
     {
         "isNumberValid": true,
         "message": "Card number is valid"
     }
+    ```
     
-    Status Code: 200 OK
+    **Status Code:** 200 OK
 
 - Invalid Card Response:
+    ```json
     {
         "isNumberValid": false,
         "message": "Card number is not valid"
     }
+    ```
 
-    Status Code: 200 OK
+    **Status Code:** 200 OK
 
 - Missing Card Number:
+    ```json
     {
         "isNumberValid": false,
         "message": "Card number is required"
     }
+    ```
 
-    Status Code: 400 Bad Request
+    **Status Code:** 400 Bad Request
 
 - Card Number not string:
+    ```json
     {
         "isNumberValid": false,
         "message": "Card number must be a string"
     }
-    
-    Status Code: 400 Bad Request
+    ```
+
+    **Status Code:** 400 Bad Request
 
 
 ## Card Number Validations
