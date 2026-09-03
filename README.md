@@ -40,15 +40,15 @@ CardValidation/
 
 ## Project Installation
 
-- Clone repository: git clone <repository-url>
-- Install dependencies: npm install
-- Run the application: npm run dev
-- Server: http://localhost:3000
+- Clone repository: `git clone <repository-url>`
+- Install dependencies: `npm install`
+- Run the application: `npm run dev`
+- Server: `http://localhost:3000`
 
 ## API Endpoint
 
 - POST
-- URL: http://localhost:3000/api/validateCardNumber
+- URL: `http://localhost:3000/api/validateCardNumber`
 - Request Body:
     ```json
     {
@@ -109,11 +109,13 @@ CardValidation/
 ## TypeScript Configuration
 
 - The project uses TypeScript with strict mode enabled:
+     ```json
     {
         "compilerOptions": {
             "strict": true
         }
     }
+    ```
 
 ## Tests
 
@@ -121,6 +123,6 @@ CardValidation/
 - Endpoint testing: Postman
 - Run the tests
 
-    npm test
+    `npm test`
 
 
