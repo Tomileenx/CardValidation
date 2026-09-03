@@ -42,7 +42,9 @@ CardValidation/
 
 - Clone repository: `git clone <repository-url>`
 - Install dependencies: `npm install`
-- Run the application: `npm run dev`
+- Run the application: 
+    - Locally: `npm run dev`
+    - Production: `npm start`
 - Server: `http://localhost:3000`
 
 ## API Endpoint
