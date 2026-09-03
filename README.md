@@ -49,16 +49,18 @@ CardValidation/
 
 ## API Endpoint
 
-- POST
-- URL: `http://localhost:3000/api/validateCardNumber`
-- Request Body:
+- **Method:** POST
+- **URL:** 
+    - **Local:** `http://localhost:3000/api/validateCardNumber`
+    - **Live:** `https://cardvalidation-k1rh.onrender.com/api/validateCardNumber`
+- **Request Body:**
     ```json
     {
         "cardNumber": "4532 0151 1283 0366"
     }
     ```
 
-- Valid Card Response:
+- **Valid Card Response:**
     ```json
     {
         "isNumberValid": true,
