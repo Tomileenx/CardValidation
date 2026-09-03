@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec node --loader ts-node/esm index.ts",
+    "start": "node --loader ts-node/esm index.ts",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
